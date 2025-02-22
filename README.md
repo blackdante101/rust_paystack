@@ -60,11 +60,11 @@ Abukari Einus - einusabukari@gmail.com
 Project Link: [https://github.com/blackdante101/rust_paystack](https://github.com/blackdante101/rust_paystack)
 
 [contributors-shield]: https://img.shields.io/github/contributors/blackdante101/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/blackdante101/Best-README-Template/graphs/contributors
+[contributors-url]: https://github.com/blackdante101/rust_paystack/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/blackdante101/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/blackdante101/Best-README-Template/network/members
+[forks-url]: https://github.com/blackdante101/rust_paystack/network/members
 [stars-shield]: https://img.shields.io/github/stars/blackdante101/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/blackdante101/Best-README-Template/stargazers
+[stars-url]: https://github.com/blackdante101/rust_paystack/stargazers
 [issues-shield]: https://img.shields.io/github/issues/blackdante101/Best-README-Template.svg?style=for-the-badge
 [issues-url]: https://github.com/blackdante101/rust_paystack/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
