@@ -1,0 +1,12 @@
+[package]
+name = "rust_paystack"
+version = "0.1.0"
+authors = ["Abukari Einus"]
+edition = "2021"
+description = "a rust library for interacting with Paystack API"
+license = "MIT"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json"] }
+serde_json = "1.0.139"
+tokio = { version = "1", features = ["full"] }
