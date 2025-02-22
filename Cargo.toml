@@ -3,8 +3,14 @@ name = "rust_paystack"
 version = "0.1.0"
 authors = ["Abukari Einus"]
 edition = "2021"
-description = "a rust library for interacting with Paystack API"
 license = "MIT"
+description = "A Rust library for interacting with the Paystack API"
+documentation = "https://docs.rs/rust_paystack"
+homepage = "https://github.com/blackdante101/rust_paystack"
+repository = "https://github.com/blackdante101/rust_paystack"
+
+keywords = ["paystack", "payment", "api", "rust"]
+categories = ["api-bindings", "finance", "web-programming"]
 
 [dependencies]
 reqwest = { version = "0.12", features = ["json"] }

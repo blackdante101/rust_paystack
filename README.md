@@ -20,7 +20,7 @@ when creating a new instance, api key should be parsed to string
 ```no_run
 let rust_p = RustPaystack::new(PAYSTACK_SECRET_KEY.to_string());
 ```
-#Initializing a transaction
+##Initializing a transaction
 ```no_run
 #[tokio::main]
 !async fn main() {
