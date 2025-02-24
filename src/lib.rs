@@ -22,6 +22,7 @@
 //!
 //! ## Initializing a Transaction
 //! ```rust,no_run
+//! use rust_paystack::Paystack;
 //! use rust_decimal_macros::dec;
 //!
 //! #[tokio::main]
@@ -39,6 +40,8 @@
 //!
 //! ## Verifying a Transaction
 //! ```rust,no_run
+//! use rust_paystack::Paystack;
+//! 
 //! #[tokio::main]
 //! async fn main() {
 //!     let rust_p = RustPaystack::new("sk_xxxxxxxxxx".to_string());
