@@ -6,6 +6,7 @@ a rust library for interacting with Paystack API
 run this command in your project directory
 ```no_run
 cargo add rust_paystack
+cargo add rust_decimal_macros // for parsing the amount
 ```
 Including the library in your project:
 ```no_run
@@ -14,23 +15,32 @@ use rust_paystack::Paystack;
 ## Creating a new instance
 when creating a new instance, api key should be parsed to string
 ```no_run
-let rust_p = RustPaystack::new(PAYSTACK_SECRET_KEY.to_string());
+let rust_p = RustPaystack::new("sk_xxxxxxxxxx".to_string());
 ```
 ## Initializing a transaction
 ```no_run
+use rust_paystack::RustPaystack;
+use rust_decimal_macros::dec;
+
 #[tokio::main]
 !async fn main() {
-    let rust_p = RustPaystack::new(PAYSTACK_SECRET_KEY.to_string());
-    let req = rust_p.initialize_transaction( "test@testmail.com", 10.50).await;
+    let rust_p = RustPaystack::new("sk_xxxxxxxxxx".to_string());
+
+    let email = "test@testmail.com";
+    let amount = dec!(10.50); // amount should be parsed using rust_decimal_macros
+
+    let response = rust_p.initialize_transaction(email, amount).await;
      
-    println!("{:?}", req);
+    println!("{:?}", response);
 }
 ```
 ## Verfiying a transaction
 ```no_run
+use rust_paystack::RustPaystack;
+
 #[tokio::main]
 async fn main() {
-    let rust_p = RustPaystack::new(PAYSTACK_SECRET_KEY.to_string());
+    let rust_p = RustPaystack::new("sk_xxxxxxxxxx".to_string());
     let req = rust_p.verify_payment("reference").await;
      
      println!("{:?}", req);
