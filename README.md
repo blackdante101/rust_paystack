@@ -23,7 +23,7 @@ use rust_paystack::RustPaystack;
 use rust_decimal_macros::dec;
 
 #[tokio::main]
-!async fn main() {
+async fn main() {
     let rust_p = RustPaystack::new("sk_xxxxxxxxxx".to_string());
 
     let email = "test@testmail.com";
