@@ -1,6 +1,6 @@
 [package]
 name = "rust_paystack"
-version = "0.1.3"
+version = "0.1.4"
 authors = ["Abukari Einus"]
 edition = "2021"
 license = "MIT"
